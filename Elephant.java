@@ -23,6 +23,16 @@ public class Elephant extends Actor
             move(1);
         }
         //remove apple when touching elephant
-        removeTouching(Apple.class);
+        eat();
+    }
+    /*
+     * eat function
+     */
+    public void eat(){
+        if(isTouching(Apple.class)){
+            removeTouching(Apple.class);
+            MyWorld world = (MyWorld) getWorld();
+            world.createApple();
+        }
     }
 }
