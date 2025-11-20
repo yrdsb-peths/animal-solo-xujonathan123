@@ -15,5 +15,14 @@ public class Elephant extends Actor
     public void act()
     {
         // Add your action code here.
+        //move elephant left and right with arrow keys
+        if(Greenfoot.isKeyDown("left")){
+            move(-1);
+        }
+        else if(Greenfoot.isKeyDown("right")){
+            move(1);
+        }
+        //remove apple when touching elephant
+        removeTouching(Apple.class);
     }
 }
