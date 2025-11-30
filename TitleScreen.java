@@ -40,7 +40,7 @@ public class TitleScreen extends World
         elephant.setLocation(535,50);
         elephant.setLocation(538,61);
         elephant.setLocation(539,63);
-        Label label = new Label("use arrow keys to move", 50);
+        Label label = new Label("use \u2190 and \u2192 to move", 50);
         addObject(label,253,233);
         label.setLocation(304,225);
         Label label2 = new Label("press <space> to begin", 50);
